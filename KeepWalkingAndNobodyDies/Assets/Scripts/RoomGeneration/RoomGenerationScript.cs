@@ -12,21 +12,18 @@ public class RoomGenerationScript : MonoBehaviour {
 
 	private List<GameObject> _allRooms;
 	private GameObject _roomContainer;
-	private Bounds _roomPrefabBounds;
+	private RoomDimensions _roomDimensions;
 	void Awake()
 	{
 		_allRooms = new List<GameObject>();
 		Debug.Assert(_roomPrefab != null);
-		Renderer roomPrefabRenderer = _roomPrefab.GetComponent<Renderer>();
-		Debug.Assert(roomPrefabRenderer != null);
-		_roomPrefabBounds = roomPrefabRenderer.bounds;
+		Debug.Assert(_roomPrefab.GetComponent<RoomDimensions>() != null);
+		_roomDimensions = _roomPrefab.GetComponent<RoomDimensions>();
 	}
 	void Start ()
 	{
 		_roomContainer = new GameObject("Room Container");
-		Vector3 prefabDimensions = new Vector3( _roomPrefabBounds.extents.x * 2,
-											_roomPrefabBounds.extents.y * 2,
-											_roomPrefabBounds.extents.z * 2);
+
 
 		for(int x = 0; x < PuzzleDepth; ++x )
 		{
@@ -36,9 +33,9 @@ public class RoomGenerationScript : MonoBehaviour {
 				{
 
 					GameObject roomInstance = Instantiate(_roomPrefab,
-						new Vector3((x * prefabDimensions.x) + ( prefabDimensions.x - (prefabDimensions.x * PuzzleDepth))/2,
-									(y * prefabDimensions.y) + ( prefabDimensions.y - (prefabDimensions.y * PuzzleHeight))/2,
-								 	(z * prefabDimensions.z) + ( prefabDimensions.z - (prefabDimensions.z * PuzzleWidth))/2),
+						new Vector3((x * _roomDimensions.dimensions.x) + ( _roomDimensions.dimensions.x - (_roomDimensions.dimensions.x * PuzzleDepth))/2,
+									(y * _roomDimensions.dimensions.y) + ( _roomDimensions.dimensions.y - (_roomDimensions.dimensions.y * PuzzleHeight))/2,
+								 	(z * _roomDimensions.dimensions.z) + ( _roomDimensions.dimensions.z - (_roomDimensions.dimensions.z * PuzzleWidth))/2),
 								 Quaternion.Euler(Vector3.zero));
 					roomInstance.transform.parent = _roomContainer.transform;
 					_allRooms.Add(roomInstance);
