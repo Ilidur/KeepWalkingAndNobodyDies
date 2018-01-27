@@ -29,7 +29,10 @@ public class Room : MonoBehaviour {
 			wall.transform.parent = gameObject.transform;
 
 			wall.GetComponentInChildren<MeshRenderer>().materials[1].color = wallSetup[i].Colour;
-			wall.transform.localPosition = wallSetup[i].Position;
+			wall.transform.localPosition = new Vector3(
+				wallSetup[i].Position.x * wall.transform.localScale.x,
+				wallSetup[i].Position.y * wall.transform.localScale.y,
+				wallSetup[i].Position.z * wall.transform.localScale.z);
 		}
 	}
 
