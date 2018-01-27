@@ -52,5 +52,6 @@ Temp
 *.csproj
 *.pidb
 *.unityproj
+*.sln
 *.userprefs
 Builds/*
