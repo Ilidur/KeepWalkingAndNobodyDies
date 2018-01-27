@@ -23,7 +23,7 @@ public class RoomGenerationScript : MonoBehaviour {
 	void Start ()
 	{
 		_roomContainer = new GameObject("Room Container");
-
+		_roomContainer.transform.position = gameObject.transform.position;
 
 		for(int x = 0; x < PuzzleDepth; ++x )
 		{
@@ -37,7 +37,10 @@ public class RoomGenerationScript : MonoBehaviour {
 									(y * _roomDimensions.dimensions.y) + ( _roomDimensions.dimensions.y - (_roomDimensions.dimensions.y * PuzzleHeight))/2,
 								 	(z * _roomDimensions.dimensions.z) + ( _roomDimensions.dimensions.z - (_roomDimensions.dimensions.z * PuzzleWidth))/2),
 								 Quaternion.Euler(Vector3.zero));
+
+					roomInstance.transform.position += _roomContainer.transform.position;
 					roomInstance.transform.parent = _roomContainer.transform;
+
 					_allRooms.Add(roomInstance);
 				}
 			}
