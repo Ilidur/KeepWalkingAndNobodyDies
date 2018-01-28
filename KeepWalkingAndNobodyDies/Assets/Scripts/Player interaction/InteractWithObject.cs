@@ -6,11 +6,30 @@ public class InteractWithObject : MonoBehaviour {
 
 	GameObject target;
 	// Use this for initialization
-	void OnClick()
+
+	LineRenderer lineRenderer;
+
+	void Start()
 	{
-		Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-    	RaycastHit hit;
-    	if (Physics.Raycast(ray, out hit, 100))
-        	Debug.DrawLine(ray.origin, hit.point);
+		lineRenderer = gameObject.AddComponent<LineRenderer>();
+	}
+	void Update()
+	{
+		if(OVRInput.GetDown(OVRInput.Button.Any) || UnityEngine.Input.GetKeyDown(KeyCode.A))
+		{
+			Ray ray = new Ray();
+    		RaycastHit hit;
+    		if (Physics.Raycast(transform.position, transform.forward, out hit, Mathf.Infinity))
+			{
+				lineRenderer.enabled = true;
+				lineRenderer.SetPosition(0, transform.position);
+				lineRenderer.SetPosition(1, hit.point);
+				Debug.DrawLine(ray.origin, hit.point, Color.green);
+			}
+		}
+		else
+		{
+			lineRenderer.enabled = false;
+		}
 	}
 }
