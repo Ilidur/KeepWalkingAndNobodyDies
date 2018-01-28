@@ -1,0 +1,72 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1306846504077514}
+  m_IsPrefabParent: 1
+--- !u!1 &1306846504077514
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4934282622721698}
+  - component: {fileID: 114613000665881900}
+  m_Layer: 0
+  m_Name: Level Generator
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4934282622721698
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1306846504077514}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114613000665881900
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1306846504077514}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6cb78c20577334449827292f79fedfcd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _roomPrefab: {fileID: 1073116290363922, guid: 91abb59ecb8dd424e81cf932f2e623df,
+    type: 2}
+  player: {fileID: 0}
+  entrance: {fileID: 11400000, guid: ba6414111258b447d8c2f3671dad6358, type: 2}
+  exit: {fileID: 11400000, guid: bde239d713f8c48d69e653a0632b89d1, type: 2}
+  interestingRooms:
+  - {fileID: 11400000, guid: d66ac5b37fce145a89bc5e6180f3face, type: 2}
+  - {fileID: 11400000, guid: d09bab1c8235a4489ac6d84e4db1e827, type: 2}
+  - {fileID: 11400000, guid: 05ce2a0479fc74dfcba0d5ae346c2938, type: 2}
+  - {fileID: 11400000, guid: 1626ff86147ae4f179702a71e5b655d2, type: 2}
+  - {fileID: 11400000, guid: 4c370126416e443ec911d0ae43c5db1d, type: 2}
+  - {fileID: 11400000, guid: f46a9c786d4fd47e2988efad7ec054f1, type: 2}
+  - {fileID: 11400000, guid: 522489431bbab40299aae0424699256d, type: 2}
+  - {fileID: 11400000, guid: 730e177bafd76469eb295397c7f465ef, type: 2}
+  defaultRoom: {fileID: 11400000, guid: a6ea70006fff34157bf72b5158335c60, type: 2}
+  densityOfInterestingRooms: 0.55
+  PuzzleHeight: 5
+  PuzzleDepth: 5
+  PuzzleWidth: 5

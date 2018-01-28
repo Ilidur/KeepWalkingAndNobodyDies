@@ -9,7 +9,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fd1908890c7324619a76df9f41e9dc7e, type: 3}
-  m_Name: White Wall
+  m_Name: Grass Wall
   m_EditorClassIdentifier: 
-  wallColour: {r: 0, g: 0, b: 0, a: 0}
+  wallColour: {r: 0.1880742, g: 0.47794116, b: 0.07379975, a: 0}
   decal: {fileID: 0}
