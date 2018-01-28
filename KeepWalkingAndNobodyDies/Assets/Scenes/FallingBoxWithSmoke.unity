@@ -113,8 +113,29 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+<<<<<<< HEAD:KeepWalkingAndNobodyDies/Assets/Scenes/FallingBoxWithSmoke.unity
 --- !u!1 &818397830
 GameObject:
+=======
+--- !u!1 &75066338 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 100004, guid: 126d619cf4daa52469682f85c1378b4a, type: 2}
+  m_PrefabInternal: {fileID: 1019109584}
+--- !u!4 &333094820 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 459718, guid: 126d619cf4daa52469682f85c1378b4a, type: 2}
+  m_PrefabInternal: {fileID: 1019109584}
+--- !u!1 &717625977 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 113768, guid: 126d619cf4daa52469682f85c1378b4a, type: 2}
+  m_PrefabInternal: {fileID: 1019109584}
+--- !u!4 &717625978 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 487254, guid: 126d619cf4daa52469682f85c1378b4a, type: 2}
+  m_PrefabInternal: {fileID: 1019109584}
+--- !u!114 &717625979
+MonoBehaviour:
+>>>>>>> 5549fd8ee17a8a12a964628d7e9083c59909de65:KeepWalkingAndNobodyDies/Assets/Scenes/Test Scene.unity
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
@@ -138,8 +159,25 @@ AudioListener:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 818397830}
   m_Enabled: 1
+<<<<<<< HEAD:KeepWalkingAndNobodyDies/Assets/Scenes/FallingBoxWithSmoke.unity
 --- !u!124 &818397832
 Behaviour:
+=======
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd425c2d06f39bf4899d07c05d0f10eb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  grabBegin: 0.55
+  grabEnd: 0.35
+  m_parentHeldObject: 0
+  m_gripTransform: {fileID: 717625978}
+  m_grabVolumes:
+  - {fileID: 717625981}
+  m_controller: 2
+  m_parentTransform: {fileID: 0}
+--- !u!54 &717625980
+Rigidbody:
+>>>>>>> 5549fd8ee17a8a12a964628d7e9083c59909de65:KeepWalkingAndNobodyDies/Assets/Scenes/Test Scene.unity
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
@@ -153,6 +191,7 @@ Camera:
   m_GameObject: {fileID: 818397830}
   m_Enabled: 1
   serializedVersion: 2
+<<<<<<< HEAD:KeepWalkingAndNobodyDies/Assets/Scenes/FallingBoxWithSmoke.unity
   m_ClearFlags: 1
   m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
   m_NormalizedViewPortRect:
@@ -195,6 +234,22 @@ Transform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 20.6, y: 0.06, z: 0.14}
 --- !u!1001 &854292097
+=======
+  m_Radius: 0.5
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &717625982
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 717625977}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 821634a6452e74d97abdf64d99d85fbb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1001 &1019109584
+>>>>>>> 5549fd8ee17a8a12a964628d7e9083c59909de65:KeepWalkingAndNobodyDies/Assets/Scenes/Test Scene.unity
 Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -231,6 +286,98 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4277871607656130, guid: f5dfd14d06fdec5429948d6834d7b00f, type: 2}
       propertyPath: m_RootOrder
+<<<<<<< HEAD:KeepWalkingAndNobodyDies/Assets/Scenes/FallingBoxWithSmoke.unity
+=======
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 100004, guid: 126d619cf4daa52469682f85c1378b4a, type: 2}
+      propertyPath: m_TagString
+      value: MainCamera
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 126d619cf4daa52469682f85c1378b4a, type: 2}
+  m_IsPrefabParent: 0
+--- !u!1001 &1042377930
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4934282622721698, guid: 3f16c7c357e7043fe9d750b9c895873b, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4934282622721698, guid: 3f16c7c357e7043fe9d750b9c895873b, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4934282622721698, guid: 3f16c7c357e7043fe9d750b9c895873b, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4934282622721698, guid: 3f16c7c357e7043fe9d750b9c895873b, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4934282622721698, guid: 3f16c7c357e7043fe9d750b9c895873b, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4934282622721698, guid: 3f16c7c357e7043fe9d750b9c895873b, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4934282622721698, guid: 3f16c7c357e7043fe9d750b9c895873b, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4934282622721698, guid: 3f16c7c357e7043fe9d750b9c895873b, type: 2}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114613000665881900, guid: 3f16c7c357e7043fe9d750b9c895873b,
+        type: 2}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 75066338}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 3f16c7c357e7043fe9d750b9c895873b, type: 2}
+  m_IsPrefabParent: 0
+--- !u!1001 &1141269789
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 333094820}
+    m_Modifications:
+    - target: {fileID: 463470, guid: 84c8b8609f9bb434eaf5248f17ff1293, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 463470, guid: 84c8b8609f9bb434eaf5248f17ff1293, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 463470, guid: 84c8b8609f9bb434eaf5248f17ff1293, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 463470, guid: 84c8b8609f9bb434eaf5248f17ff1293, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 463470, guid: 84c8b8609f9bb434eaf5248f17ff1293, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 463470, guid: 84c8b8609f9bb434eaf5248f17ff1293, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 463470, guid: 84c8b8609f9bb434eaf5248f17ff1293, type: 2}
+      propertyPath: m_LocalRotation.w
+>>>>>>> 5549fd8ee17a8a12a964628d7e9083c59909de65:KeepWalkingAndNobodyDies/Assets/Scenes/Test Scene.unity
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -617,3 +764,91 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+<<<<<<< HEAD:KeepWalkingAndNobodyDies/Assets/Scenes/FallingBoxWithSmoke.unity
+=======
+--- !u!114 &1868845016
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1868845011}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02d61468f8b77ae4b92c344bc9a600fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_allowOffhandGrab: 1
+  m_snapPosition: 1
+  m_snapOrientation: 0
+  m_snapOffset: {fileID: 0}
+  m_grabPoints: []
+--- !u!54 &1868845017
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1868845011}
+  serializedVersion: 2
+  m_Mass: 0.1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!1 &2010554509 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 109308, guid: 126d619cf4daa52469682f85c1378b4a, type: 2}
+  m_PrefabInternal: {fileID: 1019109584}
+--- !u!4 &2010554510 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 482130, guid: 126d619cf4daa52469682f85c1378b4a, type: 2}
+  m_PrefabInternal: {fileID: 1019109584}
+--- !u!114 &2010554511
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2010554509}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd425c2d06f39bf4899d07c05d0f10eb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  grabBegin: 0.55
+  grabEnd: 0.35
+  m_parentHeldObject: 0
+  m_gripTransform: {fileID: 2010554510}
+  m_grabVolumes:
+  - {fileID: 2010554513}
+  m_controller: 1
+  m_parentTransform: {fileID: 0}
+--- !u!54 &2010554512
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2010554509}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!135 &2010554513
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2010554509}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.5
+  m_Center: {x: 0, y: 0, z: 0}
+>>>>>>> 5549fd8ee17a8a12a964628d7e9083c59909de65:KeepWalkingAndNobodyDies/Assets/Scenes/Test Scene.unity
