@@ -36,7 +36,7 @@ Transform:
   m_GameObject: {fileID: 1073116290363922}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 5, y: 5, z: 5}
+  m_LocalScale: {x: 2, y: 2, z: 2}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -54,7 +54,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   wallPrefab: {fileID: 1980242779173886, guid: 2abc0e2ecaa0d421bbf33f4168b09701, type: 2}
   wallSetup: {fileID: 11400000, guid: fd9d4e21b6d8d49d490cfbd7463cba95, type: 2}
-  RoomDesign: {fileID: 11400000, guid: 522489431bbab40299aae0424699256d, type: 2}
 --- !u!114 &114568716221125506
 MonoBehaviour:
   m_ObjectHideFlags: 1
