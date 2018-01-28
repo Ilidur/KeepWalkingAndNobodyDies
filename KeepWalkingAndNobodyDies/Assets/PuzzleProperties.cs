@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public enum Type
+public enum ObjectType
 {
     Cube,Sphere
 }
@@ -10,7 +10,7 @@ public enum Type
 public class PuzzleProperties : MonoBehaviour {
 
     public Color color;
-    public Type objectType;
+    public ObjectType objectType;
 
     // Use this for initialization
     void Start () {

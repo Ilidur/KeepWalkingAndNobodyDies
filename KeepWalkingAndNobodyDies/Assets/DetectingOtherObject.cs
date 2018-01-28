@@ -5,7 +5,7 @@ using UnityEngine;
 public class DetectingOtherObject : MonoBehaviour {
 
     public Color color;
-    public Type objectType;
+    public ObjectType objectType;
     public List<PuzzleProperties> list;
 
     // Use this for initialization
