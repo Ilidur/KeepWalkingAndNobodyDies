@@ -121,6 +121,10 @@ Transform:
 GameObject:
   m_PrefabParentObject: {fileID: 113768, guid: 126d619cf4daa52469682f85c1378b4a, type: 2}
   m_PrefabInternal: {fileID: 1019109584}
+--- !u!4 &717625978 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 487254, guid: 126d619cf4daa52469682f85c1378b4a, type: 2}
+  m_PrefabInternal: {fileID: 1019109584}
 --- !u!114 &717625979
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -135,7 +139,7 @@ MonoBehaviour:
   grabBegin: 0.55
   grabEnd: 0.35
   m_parentHeldObject: 0
-  m_gripTransform: {fileID: 0}
+  m_gripTransform: {fileID: 717625978}
   m_grabVolumes:
   - {fileID: 717625981}
   m_controller: 2
@@ -612,6 +616,10 @@ Rigidbody:
 GameObject:
   m_PrefabParentObject: {fileID: 109308, guid: 126d619cf4daa52469682f85c1378b4a, type: 2}
   m_PrefabInternal: {fileID: 1019109584}
+--- !u!4 &2010554510 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 482130, guid: 126d619cf4daa52469682f85c1378b4a, type: 2}
+  m_PrefabInternal: {fileID: 1019109584}
 --- !u!114 &2010554511
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -626,7 +634,7 @@ MonoBehaviour:
   grabBegin: 0.55
   grabEnd: 0.35
   m_parentHeldObject: 0
-  m_gripTransform: {fileID: 0}
+  m_gripTransform: {fileID: 2010554510}
   m_grabVolumes:
   - {fileID: 2010554513}
   m_controller: 1
