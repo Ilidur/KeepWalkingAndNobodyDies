@@ -8,13 +8,13 @@ public struct WallSetup
 	[SerializeField]
 	public Vector3 Position, Rotation;
 
-	[SerializeField]
-	public Color Colour;
 }
 public class Room : MonoBehaviour {
 
 	public GameObject wallPrefab;
-	public WallSetup[] wallSetup;
+	public ScriptableDimensions wallSetup;
+
+	public ScriptableRoom RoomDesign;
 
 	private List<GameObject> walls;
 
@@ -23,21 +23,17 @@ public class Room : MonoBehaviour {
 	{
 		walls = new List<GameObject>();
 
-		for(int i = 0; i < wallSetup.Length; ++i)
+		//6 walls, obvs.
+		for(int i = 0; i < 6; ++i)
 		{
-			GameObject wall = Instantiate(wallPrefab, Vector3.zero, Quaternion.Euler(wallSetup[i].Rotation));
+			GameObject wall = Instantiate(wallPrefab, Vector3.zero, Quaternion.Euler(wallSetup.rotation[i]));
 			wall.transform.parent = gameObject.transform;
 
-			wall.GetComponentInChildren<MeshRenderer>().materials[1].color = wallSetup[i].Colour;
+			wall.GetComponentInChildren<MeshRenderer>().materials[1].color = RoomDesign.wall[i].wallColour;
 			wall.transform.localPosition = new Vector3(
-				wallSetup[i].Position.x * wall.transform.localScale.x,
-				wallSetup[i].Position.y * wall.transform.localScale.y,
-				wallSetup[i].Position.z * wall.transform.localScale.z);
+				wallSetup.position[i].x * wall.transform.localScale.x,
+				wallSetup.position[i].y * wall.transform.localScale.y,
+				wallSetup.position[i].z * wall.transform.localScale.z);
 		}
-	}
-
-	// Update is called once per frame
-	void Update () {
-
 	}
 }
