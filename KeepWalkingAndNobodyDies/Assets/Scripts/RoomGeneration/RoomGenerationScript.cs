@@ -67,7 +67,7 @@ public class RoomGenerationScript : MonoBehaviour {
 	}
 	ScriptableRoom GetNextRoom()
 	{
-		return Random.value < densityOfInterestingRooms ? interestingRooms[Random.Range(0, interestingRooms.Length-1)] : defaultRoom;
+		return Random.value < densityOfInterestingRooms ? interestingRooms[Random.Range(0, interestingRooms.Length)] : defaultRoom;
 	}
 
 	void PlaceStart()
@@ -98,7 +98,7 @@ public class RoomGenerationScript : MonoBehaviour {
 			Random.Range(0, PuzzleHeight-1),
 			Random.Range(0, PuzzleDepth-1));
 
-		int roomToZero = Random.Range(0, 5);
+		int roomToZero = Random.Range(0, 6);
 		switch(roomToZero)
 		{
 			case 0: { exitRoom.x = 0; break; }
