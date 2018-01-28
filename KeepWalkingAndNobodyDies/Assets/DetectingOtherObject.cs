@@ -4,9 +4,11 @@ using UnityEngine;
 
 public class DetectingOtherObject : MonoBehaviour {
 
-    public Color color;
+    Color color;
     public ObjectType objectType;
     public List<PuzzleProperties> list;
+    public GameObject fire;
+    public GameObject Target;
 
     // Use this for initialization
     void Start () {
@@ -42,6 +44,7 @@ public class DetectingOtherObject : MonoBehaviour {
             if (list.Count > 1)
             {
                 Debug.Log("More than one!");
+                Instantiate<GameObject>(fire, Target.transform.position, fire.transform.rotation);
             }
         }
     }

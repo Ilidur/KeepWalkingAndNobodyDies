@@ -8,9 +8,10 @@ public class Smashing : MonoBehaviour {
     public float breakSpeed = 6.0f;
     Vector3 lastPosition = Vector3.zero;
     public GameObject sphere;
+    public GameObject smoke;
 
-	// Use this for initialization
-	void Start () {
+    // Use this for initialization
+    void Start () {
 		
 	}
 	
@@ -32,6 +33,7 @@ public class Smashing : MonoBehaviour {
         {
             Debug.Log("Big collision");
             Instantiate<GameObject>(sphere, transform.position, transform.rotation);
+            Instantiate<GameObject>(smoke, transform.position, transform.rotation);
             Destroy(gameObject);
         }
     }
