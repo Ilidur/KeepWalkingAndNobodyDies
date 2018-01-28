@@ -26,7 +26,7 @@ public class Room : MonoBehaviour {
 			GameObject wall = Instantiate(wallPrefab, Vector3.zero, Quaternion.Euler(wallSetup.rotation[i]));
 			wall.transform.parent = gameObject.transform;
 
-			wall.GetComponentInChildren<MeshRenderer>().materials[1].color = RoomDesign.wall[i].wallColour;
+			wall.GetComponentInChildren<MeshRenderer>().materials[0].color = RoomDesign.wall[i].wallColour;
 			wall.transform.localPosition = new Vector3(
 				wallSetup.position[i].x * wall.transform.localScale.x,
 				wallSetup.position[i].y * wall.transform.localScale.y,
